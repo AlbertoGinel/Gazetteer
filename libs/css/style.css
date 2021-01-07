@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+body{
+  background-color: #75cff0ff;
+}
+
+#map { 
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#ventanaText{
+  z-index: 100000;
+  display: inline;
+}
+
+.modal-title{
+  display: inline;
+  font-size: x-large;
+  width: 100%;
+}
+
+.modal-dialog{
+  margin-top: 20vh;
+  margin-bottom: 2vh;
+}
+
+.modal{
+  opacity: 1 !important;
+  overflow-y: hidden !important;
+}
+
+.flag-title{
+  display: inline;
+  height: 4vw;
+  position: relative;
+  left: 4vw;
+  /*top: 2vh;*/
+}
+
+.weatherDescr{
+  font-size: 1.5em;
+}
+
+.modal-header{
+  
+  background: rgb(231, 253, 255);
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 50%;
+  background-size: 30vw;
+
+}
+
+.nameMenuTitle{
+  margin-right: 0%;
+  float: right;
+}
+
+
+
+.close{
+  display: inline;
+}
+
+.modal-backdrop{
+    opacity:0 !important;
+}
+
+.modal-body{
+  max-height: 70vh;
+}
+
+#imagesBody{
+  overflow-y: scroll;
+}
+
+
+
+.rowElem{
+  border-radius: 4px;
+  padding: 8px;
+  display: flow-root;
+}
+
+
+
+.rowElem:nth-child(odd) {
+  background: rgba(117, 207, 240, 0.30);
+}
+
+.btn{
+  display: block;
+  width: 100%;
+  margin: 3px;
+  background-color: #c0d179ff;
+  height: 6vh;
+  min-height: 40px;
+}
+
+#menus{
+  border: 0px;
+  margin-top: 90px;
+  width: 12vw;
+}
+
+.legendModalElem{
+  display: inline;
+}
+
+#countriesDropDown{
+  width: 100%;
+}
+
+.dataModalElem{
+  display: inline;
+  float: right;
+  max-width: 60%;
+}
+
+#selectCountry{
+  width: 35vw;
+  margin-right: 32vw;
+  margin-left: 32vw;
+  background-color: white;
+  pointer-events: auto;
+  height: 11vh;
+  max-height: 35px;
+  margin-top: 2vh;
+}
+
+.selectCoun{
+  height: 100%;
+}
+
+.input-group{
+ display: flex;
+}
+
+.form-control{
+  display: flex;
+  margin-top: 0.5vh;
+}
+
+.input-group-append{
+  display: flex;
+}
+
+
+.dropdown-menu{
+  width: 100%;
+  overflow-y: scroll;
+  height: 60vh;
+}
+
+.dropdown-item{
+  width: auto !important;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#imagesBody{
+  
+  max-width: 100%;
+}
+
+.imageSpare{
+  max-width: 100%;
+  max-height: 65vh;
+  margin: 1px;
+  border-radius: 25px;
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.leaflet-popup-content p{
+  margin: 2px;
+
+}

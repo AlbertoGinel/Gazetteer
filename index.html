@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  
+
+  <link rel="stylesheet" type="text/css"  href="./libs/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" type="text/css"  href="./libs/css/leaflet.css"></link>
+  <link rel="stylesheet" type="text/css"  href="./libs/css/easy-button.css"></link>
+
+  <link rel="stylesheet" type="text/css"  href="./libs/css/style.css"></link>
+  
+</head>
+<body>
+
+  <div id="map">
+
+  <div id="selectCountry"  class="leaflet-control leaflet-bar leaflet-top input-group">
+    <select id="countriesDropDown">
+      <option value="" selected disabled hidden>Choose country</option>
+    </select>
+  </div>
+
+    <div id="mainInfo" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document"> 
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="nameCountryTitle"></span><span class="nameMenuTitle" >Main Info</span></h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+
+          <div id="mainInfoBody" class="modal-body"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="demogr" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document"> 
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="nameCountryTitle"></span><span class="nameMenuTitle" >Demography</span></h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+
+          <div id="demogrBody" class="modal-body"></div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="weather" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document"> 
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="nameCountryTitle"></span><span class="nameMenuTitle" >Weather</span></h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+
+          <div id="weatherBody" class="modal-body"></div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="money" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document"> 
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="nameCountryTitle"></span><span class="nameMenuTitle" >Currency</span></h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+
+          <div id="moneyBody" class="modal-body">
+            <div class=""><div class="legendModalElem">Currency</div></div>
+            <div id="currencyList"></div>
+
+            
+            <div id="exchangeGroups"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div id="images" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document"> 
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title"><span class="nameCountryTitle"></span><span class="nameMenuTitle">Images</span></h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+
+          <div id="imagesBody" class="modal-body"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="libs/js/leaflet.js"></script>
+
+  <script src="libs/js/jquery.min.js"></script>
+
+  <script src="libs/js/bootstrap.min.js"></script>
+
+  <script src="libs/js/script.js"></script>
+
+  <script src="libs/js/dist/spin.min.js" charset="utf-8"></script> <!-- spin/dist/spin.min.js -->
+  <script src="libs/js/leaflet.spin.min.js" charset="utf-8"></script> <!-- leaflet.spin.min.js -->
+
+  <script src="libs/js/dist/easy-button.js" charset="utf-8"></script> 
+
+</body>
+</html>
